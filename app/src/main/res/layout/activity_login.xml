@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="46dp" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="46dp" />
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/gem_2017"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="sans-serif"
+        android:letterSpacing="0.03"
+        android:text="Tên đăng nhập"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="@id/gLeft"
+
+
+        app:layout_constraintTop_toBottomOf="@id/ivLogo"
+        tools:text="Tên đăng nhập" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:theme="@style/MyEditText"
+        android:id="@+id/etUser"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:letterSpacing="0.03"
+        android:paddingRight="20dp"
+        android:text="GiangDinh"
+        android:textColor="#3f5fa3"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="@id/gLeft"
+        app:layout_constraintRight_toRightOf="@id/gRight"
+        app:layout_constraintTop_toBottomOf="@+id/tvUser" />
+
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintBottom_toBottomOf="@id/etUser"
+        app:layout_constraintRight_toRightOf="@id/etUser"
+        app:layout_constraintTop_toTopOf="@id/etUser" />
+
+    <TextView
+        android:id="@+id/tvPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif"
+        android:letterSpacing="0.03"
+        android:text="Mật khẩu"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="@id/gLeft"
+        app:layout_constraintTop_toBottomOf="@id/etUser" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:theme="@style/MyEditText"
+        android:id="@+id/etPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:paddingRight="30dp"
+        android:text="abcdefght"
+        app:layout_constraintLeft_toLeftOf="@id/gLeft"
+        app:layout_constraintRight_toRightOf="@id/gRight"
+        app:layout_constraintTop_toBottomOf="@id/tvPassword" />
+
+    <ImageView
+        android:layout_width="22dp"
+        android:layout_height="14dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/ic_view"
+        app:layout_constraintBottom_toBottomOf="@id/etPassword"
+        app:layout_constraintRight_toRightOf="@id/etPassword"
+        app:layout_constraintTop_toTopOf="@id/etPassword" />
+
+
+    <TextView
+        android:id="@+id/tvForgetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif"
+        android:letterSpacing="0.02"
+        android:textColor="#78838c"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintRight_toRightOf="@id/gRight"
+        app:layout_constraintTop_toBottomOf="@id/etPassword"
+        android:text="Quên mật khẩu?" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_login"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.03"
+        android:text="Đăng nhập"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="@id/gLeft"
+        app:layout_constraintRight_toRightOf="@id/gRight"
+        app:layout_constraintTop_toBottomOf="@id/tvForgetPassword" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="sans-serif"
+        android:letterSpacing="0.02"
+        android:text="Version 1.0"
+        android:textColor="#78838c"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
